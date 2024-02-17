@@ -56,7 +56,7 @@ body {
     flex-direction: column;
 }
 .card:hover {
-    height: 80%;
+    height: 75%;
     width: 22%;
 }
 
