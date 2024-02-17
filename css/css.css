@@ -57,6 +57,7 @@ body {
 }
 .card:hover {
     height: 75%;
+    max-height: 200px;
     width: 22%;
 }
 
