@@ -78,18 +78,3 @@ ul {
     padding: 0; 
     margin: 0; 
 }
-
-@media only screen and (max-width: 800px) {
-    .card {
-        height: 40vw;
-        min-height: 260px;
-        width: 5vw;
-        min-width: 150px;
-    }
-    .pj {
-        height: 30vw;
-        min-height: 170px;
-        width: 3vw;
-        min-width: 120px;
-    }
-}
