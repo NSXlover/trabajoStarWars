@@ -40,14 +40,14 @@ body {
     height: 70%;
 }
 .card {
-    height: 70%;
+    height: 60%;
     width: 20%;
     min-width: 175px;
     background-image: url("../media/card_bg.jpg");
     background-size: contain;
     box-shadow: 0 0 10px 5px orange;
     border: 1.5px solid black;
-    margin: 0 -40px;
+    margin: 0 -30px;
     border-radius: 20px;
     padding-bottom: 2%;
     display: flex;
@@ -56,14 +56,14 @@ body {
     flex-direction: column;
 }
 .card:hover {
-    height: 75%;
-    max-height: 200px;
-    width: 22%;
+    height: 70%;
+    max-height: 350px;
+    width: 25%;
 }
 
 .pj {
     border-radius: 15px;
-    height: 80%;
+    height:75%;
     min-width: 160px;
     width: 80%;
     background-size: contain;
