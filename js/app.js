@@ -2,7 +2,7 @@
 
 window.onload = function () {
 
-    $('body').append(`<div class="container-fluid container-md text-center translate-midle"><div id="row1" class="row text-center mt-5 mb-5"></div><div id="row2" class="row align-items-center"><div id="cardRow" class="container-lg col-md-8 my-0"></div><div id="infoRow" class="container-lg col-md-2"></div></div></div>`);
+    $('body').append(`<div class="container-fluid container-md text-center translate-midle"><div id="row1" class="row text-center mt-5 mb-5"></div><div id="row2" class="row align-items-center"><div id="cardRow" class="container col-md-8 my-0"></div><div id="infoRow" class="container-lg col-md-2"></div></div></div>`);
 
     //Introducimos el audio
     $('#row1').append(`<audio id="cantinaSong"> <source src="./media/cantinaSong.webm" type="audio/mpeg"> Tu navegador no soporta el elemento de audio. </audio>`);
