@@ -43,6 +43,14 @@ body {
 #infoRow{
     height: 70%;
 }
+#infoHeader{
+    margin-bottom: 50px;
+}
+#infoPj {
+    column-count: 2; /* Divide el contenido en dos columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+    column-rule: 1px solid #ccc; /* Borde entre las columnas */
+}
 .card {
     height: 35vw;
     max-height: 255px;

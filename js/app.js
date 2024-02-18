@@ -202,7 +202,7 @@ window.onload = function () {
         const datosPj = personajes.get(pj);
 
         //Desplegamos la lista
-        $('.infoDiv').html(`<div id="infoHeader"><p>INFORMACIÓN DEL PERSONAJE:</p></div><div id="infoContent"><ul id="infoPj"></div>`);
+        $('.infoDiv').html(`<div id="infoHeader"><div>INFORMACIÓN DEL PERSONAJE:</div></div><div id="infoContent"><ul id="infoPj"></div>`);
         //impresión de datos
         for (let index = 0; index < infRelev.length; index++) {
             const dato = infRelev[index];
