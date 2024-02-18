@@ -54,28 +54,38 @@ window.onload = function () {
 
     for (let index = 1; index <= nCartas; index++) {
         if (index < medio) {
-            $(`#card${index}`).css('z-index', `${index}`).css('transform', `rotate(-15deg) translateY(${transY}px)`).hover(
+            $(`#card${index}`).css('z-index', `${index}`).css('transform', `rotate(-15deg) translateY(${transY}px)`).click(
+                function() {
+                    seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
+                }
+            ).hover(
                 function () {
                     $(this).css('z-index', `${nCartas + 1}`)
-                    seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
                 }, function () {
                     $(this).css('z-index', `${index}`);
                 });
             transY -= 15;
         } else if (index == medio) {
-            $(`#card${index}`).css('z-index', `${index}`).css('transform', `translateY(${transY}px)`).hover(
+            $(`#card${index}`).css('z-index', `${index}`).css('transform', `translateY(${transY}px)`).click(
+                function() {
+                    seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
+                }
+            ).hover(
                 function () {
                     $(this).css('z-index', `${nCartas + 1}`)
-                    seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
+                    
                 }, function () {
                     $(this).css('z-index', `${index}`);
                 });
             transY += 15;
         } else if (index > medio) {
-            $(`#card${index}`).css('z-index', `${nCartas - index + 1}`).css('transform', `rotate(15deg) translateY(${transY}px)`).hover(
+            $(`#card${index}`).css('z-index', `${nCartas - index + 1}`).css('transform', `rotate(15deg) translateY(${transY}px)`).click(
+                function() {
+                    seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
+                }
+            ).hover(
                 function () {
                     $(this).css('z-index', `${nCartas + 1}`)
-                    seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
                 }, function () {
                     $(this).css('z-index', `${nCartas - index + 1}`)
                 });

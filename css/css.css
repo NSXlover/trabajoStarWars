@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'SWfont';
-    src: url('../media/STARWARS.ttf') format('truetype');
-}
+    src: url('../media/STARWARS.woff2') format('woff2'), /* Formato WOFF2 para navegadores modernos */
+         url('../media/STARWARS.woff') format('woff'),   /* Formato WOFF para compatibilidad */
+         url('../media/STARWARS.ttf') format('truetype'); /* Formato TTF para navegadores más antiguos */
+  }
 
 * {
     color: orange;
@@ -64,7 +66,9 @@ body {
     width: 35vw;
     max-width: 200px;
 }
-
+.card p{
+    text-shadow: 4px 3px 2px grey;
+}
 .pj {
     border-radius: 15px;
     height:75%;
