@@ -6,8 +6,8 @@ window.onload = function () {
     <div class="container-fluid container-md text-center translate-midle">
     <div id="row1" class="row text-center my-5"></div>
     <div id="row2" class="row py-5">
-        <div id="cardRow" class="container-fluid col-md-8 col-sm-10 col-xs-12 my-0"></div>
-        <div id="infoRow" class="container-lg col-md-4 col-sm-12 col-xs-12 my-5"></div>
+        <div id="cardRow" class="container-fluid col-md-8 col-sm-10 col-xs-12 my-5"></div>
+        <div id="infoRow" class="container-lg col-md-4 col-sm-12 col-xs-12 "></div>
     </div>
 </div>
 `
