@@ -5,9 +5,9 @@ window.onload = function () {
     $('body').append(`
     <div class="container-fluid container-md text-center translate-midle">
     <div id="row1" class="row text-center my-5"></div>
-    <div id="row2" class="row align-items-center">
+    <div id="row2" class="row py-5">
         <div id="cardRow" class="container-fluid col-md-8 col-sm-10 col-xs-12 my-0"></div>
-        <div id="infoRow" class="container-lg col-md-2 col-sm-10 col-xs-12"></div>
+        <div id="infoRow" class="container-lg col-md-4 col-sm-12 col-xs-12 my-5"></div>
     </div>
 </div>
 `
@@ -33,7 +33,7 @@ window.onload = function () {
 
     //creación de estructura HTML
     $('#infoRow').append('</div><div class="infoDiv">');
-    $('#cardRow').append('<div class="cardsRow row"></div>');
+    $('#cardRow').append('<div class="cardsRow row "></div>');
 
     //Creación de las cartas de manera dinámica e inserción de la foto del pj
     const nCartas = 5;

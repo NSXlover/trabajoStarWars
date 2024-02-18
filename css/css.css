@@ -9,6 +9,8 @@
     transition: 0.5s;
 }
 
+
+
 body {
     height: 100dvh;
     width: 100vw;
@@ -25,7 +27,7 @@ body {
     place-content: center;
 }
 #cardRow {
-    height: 70%;
+    height: 50%;
 }
 .cardsRow{
     height: 100%;
