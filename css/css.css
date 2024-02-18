@@ -42,6 +42,7 @@ body {
 }
 #infoRow{
     height: 70%;
+    min-height: 370px;
 }
 #infoHeader{
     margin-bottom: 50px;

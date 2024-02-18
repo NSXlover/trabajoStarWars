@@ -4,8 +4,8 @@ window.onload = function () {
 
     $('body').append(`
     <div class="container-fluid container-md text-center translate-midle">
-    <div id="row1" class="row text-center my-5"></div>
-    <div id="row2" class="row py-5">
+    <div id="row1" class="row text-center mt-5"></div>
+    <div id="row2" class="row ">
         <div id="cardRow" class="container-fluid col-md-8 col-sm-10 col-xs-12 my-5">
             <div><h3 class="py-5">Seleccione una carta:</h3><br></div>
         </div>
