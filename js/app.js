@@ -40,7 +40,7 @@ window.onload = function () {
     //Creación de las cartas de manera dinámica e inserción de la foto del pj
     const nCartas = 5;
     for (let index = 1; index <= nCartas; index++) {
-        $('.cardsRow').append(`<div id='card${index}' class='card col-2'><p class="cardText">${nombres[index - 1]}</p><br><img id='pj${index}' class='pj'></img></div>`);
+        $('.cardsRow').append(`<div id='card${index}' class='card col-1'><p class="cardText">${nombres[index - 1]}</p><br><img id='pj${index}' class='pj'></img></div>`);
     }
     for (let index = 1; index <= nCartas; index++) {
         $(`#pj${index}`).attr('src', `./media/${index}.jpeg`)
