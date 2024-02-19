@@ -72,9 +72,7 @@ body {
 }
 .card:hover {
     height: 30vw;
-    max-height: 200px;
     width: 20vw;
-    max-width: 160px;
 }
 .card p{
     text-shadow: 4px 3px 2px grey;
