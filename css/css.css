@@ -53,7 +53,7 @@ body {
 }
 .card {
     height: 25vw;
-    max-height: 190px;
+    max-height: 200px;
     width: 15vw;
     max-width: 150px;
     background-image: url("../media/card_bg.jpg");
