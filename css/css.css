@@ -53,9 +53,9 @@ body {
 }
 .card {
     height: 25vw;
-    max-height: 150px;
+    max-height: 190px;
     width: 15vw;
-    max-width: 100px;
+    max-width: 150px;
     background-image: url("../media/card_bg.jpg");
     background-size: contain;
     box-shadow: 0 0 10px 5px orange;
