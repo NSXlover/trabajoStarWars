@@ -55,7 +55,7 @@ window.onload = function () {
     for (let index = 1; index <= nCartas; index++) {
         if (index < medio) {
             $(`#card${index}`).css('z-index', `${index}`).css('transform', `rotate(-15deg) translateY(${transY}px)`).click(
-                function() {
+                function () {
                     seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
                 }
             ).hover(
@@ -67,20 +67,20 @@ window.onload = function () {
             transY -= 15;
         } else if (index == medio) {
             $(`#card${index}`).css('z-index', `${index}`).css('transform', `translateY(${transY}px)`).click(
-                function() {
+                function () {
                     seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
                 }
             ).hover(
                 function () {
                     $(this).css('z-index', `${nCartas + 1}`)
-                    
+
                 }, function () {
                     $(this).css('z-index', `${index}`);
                 });
             transY += 15;
         } else if (index > medio) {
             $(`#card${index}`).css('z-index', `${nCartas - index + 1}`).css('transform', `rotate(15deg) translateY(${transY}px)`).click(
-                function() {
+                function () {
                     seleccionPj($(this).find('p').text()); //Pasamos el valor de h2 a la función
                 }
             ).hover(
@@ -217,4 +217,21 @@ window.onload = function () {
         }
         $('.infoDiv').append(`</ul>`);
     }
+
+    function createShootingStar() {
+        const starCount = Math.random() * 10; // Adjust the number of stars
+        for (let i = 0; i < starCount; i++) {
+            const star = $('<div>').addClass('shooting-star');
+            star.css({
+                left: Math.random() * window.innerWidth,
+                top: Math.random() * window.innerHeight
+            });
+            $('body').append(star);
+            setTimeout(() => {
+                star.remove();
+            }, 2000);
+        }
+    }
+
+    setInterval(createShootingStar, 3000);
 }

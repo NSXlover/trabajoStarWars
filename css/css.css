@@ -1,9 +1,12 @@
 @font-face {
     font-family: 'SWfont';
-    src: url('../media/STARWARS.woff2') format('woff2'), /* Formato WOFF2 para navegadores modernos */
-         url('../media/STARWARS.woff') format('woff'),   /* Formato WOFF para compatibilidad */
-         url('../media/STARWARS.ttf') format('truetype'); /* Formato TTF para navegadores más antiguos */
-  }
+    src: url('../media/STARWARS.woff2') format('woff2'),
+        /* Formato WOFF2 para navegadores modernos */
+        url('../media/STARWARS.woff') format('woff'),
+        /* Formato WOFF para compatibilidad */
+        url('../media/STARWARS.ttf') format('truetype');
+    /* Formato TTF para navegadores más antiguos */
+}
 
 * {
     color: orange;
@@ -17,9 +20,11 @@ body {
     height: 100dvh;
     width: 100vw;
     background-image: url("../media/bg.png");
+    opacity: 100;
     color: white;
     overflow-x: hidden;
 }
+
 #row2 {
     height: 80dvh;
 }
@@ -28,10 +33,12 @@ body {
     display: grid;
     place-content: center;
 }
+
 #cardRow {
     height: 50%;
 }
-.cardsRow{
+
+.cardsRow {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -40,18 +47,25 @@ body {
 .btn {
     background-color: orange;
 }
-#infoRow{
+
+#infoRow {
     height: 70%;
     min-height: 370px;
 }
-#infoHeader{
+
+#infoHeader {
     margin-bottom: 50px;
 }
+
 #infoPj {
-    column-count: 2; /* Divide el contenido en dos columnas */
-    column-gap: 20px; /* Espacio entre las columnas */
-    column-rule: 1px solid #ccc; /* Borde entre las columnas */
+    column-count: 2;
+    /* Divide el contenido en dos columnas */
+    column-gap: 20px;
+    /* Espacio entre las columnas */
+    column-rule: 1px solid #ccc;
+    /* Borde entre las columnas */
 }
+
 .card {
     height: 35vw;
     max-height: 255px;
@@ -69,18 +83,21 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .card:hover {
     height: 40vw;
     max-height: 280px;
     width: 35vw;
     max-width: 200px;
 }
-.card p{
+
+.card p {
     text-shadow: 4px 3px 2px grey;
 }
+
 .pj {
     border-radius: 15px;
-    height:75%;
+    height: 75%;
     max-height: 245px;
     width: 80%;
     max-width: 145px;
@@ -92,8 +109,34 @@ body {
 .cardText {
     font-size: 1.2rem;
 }
+
 ul {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: shootingStar 2s linear infinite;
+}
+
+@keyframes shootingStar {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    50% {
+        opacity: 0.5;
+        /* Reduce opacity gradually */
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(2000px, 800px);
+    }
 }
