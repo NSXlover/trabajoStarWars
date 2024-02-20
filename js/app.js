@@ -6,10 +6,10 @@ window.onload = function () {
     <div class="container-fluid container-md text-center translate-midle">
     <div id="row1" class="row text-center mt-5"></div>
     <div id="row2" class="row ">
-        <div id="cardRow" class="container-fluid col-xl-7 col-lg-7 col-md-12 col-sm-9 col-xs-12 my-5">
+        <div id="cardRow" class="container-fluid col-xl-8 col-lg-6 col-md-12 col-sm-12 col-xs-12 my-5">
             <div><h3 class="py-5">Seleccione una carta:</h3><br></div>
         </div>
-        <div id="infoRow" class="container-lg col-md-12 col-sm-12 col-xs-12 my-3"></div>
+        <div id="infoRow" class="container-lg col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 my-5"></div>
     </div>
 </div>
 `
