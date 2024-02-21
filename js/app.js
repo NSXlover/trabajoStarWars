@@ -219,19 +219,19 @@ window.onload = function () {
     }
 
     function createShootingStar() {
-        const starCount = Math.random() * 10; // Adjust the number of stars
+        const starCount = Math.random() * (20-5) + 5; // Adjust the number of stars
         for (let i = 0; i < starCount; i++) {
             const star = $('<div>').addClass('shooting-star');
             star.css({
                 left: Math.random() * window.innerWidth,
-                top: Math.random() * window.innerHeight
+                top: -Math.random() * window.innerHeight
             });
             $('body').append(star);
             setTimeout(() => {
                 star.remove();
-            }, 2000);
+            }, 3000);
         }
     }
 
-    setInterval(createShootingStar, 3000);
+    setInterval(createShootingStar, 1000);
 }

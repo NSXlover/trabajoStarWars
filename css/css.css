@@ -8,6 +8,7 @@
     /* Formato TTF para navegadores más antiguos */
 }
 
+
 * {
     color: orange;
     font-family: 'SWfont', sans-serif;
@@ -69,7 +70,9 @@ body {
 .card {
     height: 35vw;
     max-height: 255px;
-    width: 30vw;
+    min-height: 230px;
+    width: 8vw;
+    min-width: 150px;
     max-width: 180px;
     background-image: url("../media/card_bg.jpg");
     background-size: contain;
@@ -121,7 +124,7 @@ ul {
     width: 2px;
     height: 2px;
     background-color: #fff;
-    animation: shootingStar 2s linear infinite;
+    animation: shootingStar 4s linear infinite;
 }
 
 @keyframes shootingStar {
@@ -137,6 +140,6 @@ ul {
 
     100% {
         opacity: 0;
-        transform: translate(2000px, 800px);
+        transform: translate(1500px, 800px);
     }
 }
